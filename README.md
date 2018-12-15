@@ -3,6 +3,9 @@
 NOTES:
 
 - currently a work in progress, have branches for solutions up to end of step 2.
+- Aims are to teach:
+  - how to set up express-handlebars (via walkthrough)
+  - learn HBS syntax (via challenges)
 
 ## Steps for delivery
 
