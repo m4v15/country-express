@@ -1,20 +1,19 @@
 # country-express
 
-NOTES:
-
-- currently a work in progress, have branches for solutions up to end of step 2.
 - Aims are to teach:
   - how to set up express-handlebars (via walkthrough)
-  - learn HBS syntax (via challenges)
+  - learn HBS syntax and usefullness (via challenges)
 
 ## Steps for delivery
 
-1. Walk through to set up express handlebars, up to the stage on branch `init`
-2. Students should do challenge alone, link them to some guides (TBD).
+1. Walk through to set up express handlebars, up to the stage on branch `after-walkthrough`
+  - This is just going through the slightly fiddly part of giving directories and showing exactly what this means, should be quite short.
+2. Students should do challenges alone, link them to some guides (TBD).
+  - For challenges 1-4 will add some guides.
 
 ### Challenges:  
 
-Answers on step-x branch (not for 3 & 4)
+Answers on `after-challenge-x` branch (not for 3 & 4)
 
 1. On the ‘/populations’ route, pass in the country data, and use `each` to render an element for each country, saying the country name and it’s population, if the population is not null (if it is null, don’t display the country at all)
 
@@ -28,11 +27,20 @@ _Generate another view in order to be able to see the benefits of partials in ch
 
 _teach how partials work, how to set them up in express-handlebars_
 
-4. Change the population page to display in red text ‘X has a large population’ if it has a population > 1 mil and `X had a small population` in blue text otherwise (including null). You will need to use ‘helpers’ and `if`.
+4. Your challenge now is to make a new route, view, and link on the home view, with the following criteria:
+  - When a user clicks the links it takes them to a view with a list of the countries.
+  - If the country has a population larger than 1 million, it should display, in red text, ‘X has a large population’
+  - Else, it should display, in blue text, `X has a small population`
+  - All the other views/routes should stay the same (i.e. you will need to use a new view)
+  - You will need to make a helper to check, and use an if statement in HBS.
 
 _teach how helpers work_
 
-Additional challenges:
+5. Now let's use all these templates some more! You should add buttons that take you to new endpoints that render the following, **without adding anymore handlebars templates! Instead you should just be passing in different, manipulated data to the templates we already have.** If you want to, you can style the links a bit (make the link a partial!):
+  - [ ] `big`: the same as `populations` but only render countries with population larger than 1 million.
+  - [ ] `small`: the same as `populations` but only render countries with population smaller than 1 million.
+  - [ ] `sorted`: the same as `populations` but render the countries in order of population largest to smallest.
+  
+ _show how by using templates you can quickly make lots of different pages!_
 
-- Sort by pop size (not using HBS!)
-- Add some nice CSS
+If you finish, add some styling!
