@@ -1,4 +1,4 @@
-# country-express
+# How to use handlebars with express using express-handlebars package
 
 ## Contents
 
