@@ -9,12 +9,12 @@ NOTES:
 
 ## Steps for delivery
 
-1. Walk through to set up express handlebars, up to the stage on branch `init`
+1. Walk through to set up express handlebars, up to the stage on branch `after-walkthrough`
 2. Students should do challenge alone, link them to some guides (TBD).
 
 ### Challenges:  
 
-Answers on step-x branch (not for 3 & 4)
+Answers on `after-challenge-x` branch (not for 3 & 4)
 
 1. On the ‘/populations’ route, pass in the country data, and use `each` to render an element for each country, saying the country name and it’s population, if the population is not null (if it is null, don’t display the country at all)
 
