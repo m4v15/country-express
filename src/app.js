@@ -16,6 +16,7 @@ app.engine(
   exphbs({
     extname: "hbs",
     layoutsDir: path.join(__dirname, "views", "layouts"),
+    partialsDir: path.join(__dirname, "views", "partials"),
     defaultLayout: "main"
   })
 )
