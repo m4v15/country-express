@@ -11,13 +11,18 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
+const largePop = pop => (Number(pop) > 1000000)
+
 app.engine(
   "hbs",
   exphbs({
     extname: "hbs",
     layoutsDir: path.join(__dirname, "views", "layouts"),
     partialsDir: path.join(__dirname, "views", "partials"),
-    defaultLayout: "main"
+    defaultLayout: "main",
+    helpers: {
+      largePop
+    }
   })
 )
 
@@ -30,6 +35,14 @@ app.get('/', (req, res) => {
 
 app.get('/populations', (req, res) => {
   res.render("populations", {
+    title: 'Country Populations',
+    username: "Mavis",
+    countries: countryData
+  })
+})
+
+app.get('/big-or-small', (req, res) => {
+  res.render("big_or_small", {
     title: 'Country Populations',
     username: "Mavis",
     countries: countryData
