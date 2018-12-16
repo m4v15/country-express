@@ -49,6 +49,40 @@ app.get('/big-or-small', (req, res) => {
   })
 })
 
+const largePops = countryData.filter(country => largePop(country.population))
+
+
+app.get('/big', (req, res) => {
+  res.render("populations", {
+    title: 'Country Populations',
+    username: "Mavis",
+    countries: largePops
+  })
+})
+
+const smallPops = countryData.filter(country => !largePop(country.population))
+
+
+app.get('/small', (req, res) => {
+  res.render("populations", {
+    title: 'Country Populations',
+    username: "Mavis",
+    countries: smallPops
+  })
+})
+
+
+const sortByPop = (a, b) => b.population - a.population
+const sortedCountries = [...countryData].sort(sortByPop)
+
+app.get('/sorted', (req, res) => {
+  res.render("populations", {
+    title: 'Country Populations',
+    username: "Mavis",
+    countries: sortedCountries
+  })
+})
+
 app.get('/capitals', (req, res) => {
   res.render("capitals", {
     title: 'Country Capitals',
