@@ -100,7 +100,7 @@ Handlebars has some built in helpers. [Click on this link and read about helpers
 - On the `/populations` route, tell express to render a new view "populations". 
 - The new view (which will be a new file called `populations.hbs` inside the views folder), should look the same as the home view, but instead of the links, it should render a list, with a list item for each country
 - The list item should be a string saying the country name and it’s population
-- If the population is null, don’t display add a list item for that country.
+- If the population is null, don’t display a list item for that country.
 - You should use the handlebars built in **if** and **each** helpers.
 
 
@@ -175,11 +175,11 @@ Your challenge now is to make a new route, view, and link on the home view, with
 
 Now let's use all of these templates some more! 
 
-**Without adding anymore handlebars templates or HBS could,** you should add buttons that take you to new endpoints.
-These endpoint should be and render the following: 
-  - `big`: the same as `populations` but only render countries with population larger than 1 million.
-  - `small`: the same as `populations` but only render countries with population smaller than 1 million.
-  - `sorted`: the same as `populations` but render the countries in order of population largest to smallest.
+**Without adding anymore handlebars templates or HBS could,** you should add links that take you to new endpoints.
+These endpoints should be: 
+  - `big`: render the same as `populations` but only render countries with population larger than 1 million.
+  - `small`: render the same as `populations` but only render countries with population smaller than 1 million.
+  - `sorted`: render the same as `populations` but render the countries in order of population largest to smallest.
 
 **You should just be passing in different, manipulated data to the templates we already have.** If you want to, you can style the links a bit (and even make the link a partial!):
   
