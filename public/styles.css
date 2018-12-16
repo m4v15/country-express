@@ -19,6 +19,8 @@ body {
 .link-wrap {
   width:25%;
   height: 10vh;
+  text-align: center;
+  padding: 5%;
 }
 
 .link-to-page {
