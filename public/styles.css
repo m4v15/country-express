@@ -13,10 +13,11 @@ body {
 .links-wrap {
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
  }
 
 .link-wrap {
-  flex:1;
+  width:25%;
   height: 10vh;
 }
 
