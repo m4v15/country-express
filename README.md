@@ -1,16 +1,15 @@
 # country-express
 
-NOTES:
-
-- currently a work in progress, have branches for solutions up to end of step 2.
 - Aims are to teach:
   - how to set up express-handlebars (via walkthrough)
-  - learn HBS syntax (via challenges)
+  - learn HBS syntax and usefullness (via challenges)
 
 ## Steps for delivery
 
 1. Walk through to set up express handlebars, up to the stage on branch `after-walkthrough`
-2. Students should do challenge alone, link them to some guides (TBD).
+  - This is just going through the slightly fiddly part of giving directories and showing exactly what this means, should be quite short.
+2. Students should do challenges alone, link them to some guides (TBD).
+  - For challenges 1-4 will add some guides.
 
 ### Challenges:  
 
@@ -44,8 +43,4 @@ _teach how helpers work_
   
  _show how by using templates you can quickly make lots of different pages!_
 
-
-Additional challenges:
-
-- Sort by pop size (not using HBS!)
-- Add some nice CSS
+If you finish, add some styling!
