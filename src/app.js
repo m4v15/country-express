@@ -35,5 +35,13 @@ app.get('/populations', (req, res) => {
   })
 })
 
+app.get('/capitals', (req, res) => {
+  res.render("capitals", {
+    title: 'Country Capitals',
+    username: "Mavis",
+    countries: countryData
+  })
+})
+
 module.exports = app
 
