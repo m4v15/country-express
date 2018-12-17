@@ -115,7 +115,7 @@ Handlebars has some built in helpers. [Click on this link and read about helpers
 Handlebars has a thing called partials, which help make sure you are not repeating code. 
 They are small snippets of HTML you can use across different views.
 They are called in the views as `{{> partialName}}`.
-When we set up `express-handlebars` we need to tell it where to look for our partials - look [here to find out how to do that]
+When we set up `express-handlebars` we need to tell it where to look for our partials - look [here to find out how to do that](https://github.com/ericf/express-handlebars#partialsdirviewspartials)
 
 - Inside the `views` folder, make a folder called `partials`
 - Inside `partials` make a `header.hbs` file and put the header code from your views into it.
